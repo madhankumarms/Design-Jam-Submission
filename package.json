@@ -4,7 +4,7 @@
   "description": "A landing page for booking coffee beans",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "node-sass sass/main.css css/style.css"
+    "compile-sass": "node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
