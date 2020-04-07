@@ -75,6 +75,14 @@ body {
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(5deg);
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); }
+  .heading-secondary::after {
+    content: "";
+    margin: 1.5rem auto;
+    display: block;
+    height: .4rem;
+    max-width: 35%;
+    background-color: #553232;
+    border-radius: 1rem; }
 
 .heading-tertiary {
   text-transform: uppercase;
