@@ -1,0 +1,22 @@
+{
+  "name": "design-jam-submission",
+  "version": "1.0.0",
+  "description": "A landing page for booking coffee beans",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass sass/main.css css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhankumarms/Design-Jam-Submission.git"
+  },
+  "author": "madhankumarms",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madhankumarms/Design-Jam-Submission/issues"
+  },
+  "homepage": "https://github.com/madhankumarms/Design-Jam-Submission#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
