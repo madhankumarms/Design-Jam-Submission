@@ -2,12 +2,13 @@
     perspective: 150rem;
     height: $card-height;
     position: relative;
-
+    
     &__detail {
         position: absolute;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         top: 60%;
         left: 0;
+        padding: 0 2rem;
 
         .heading-tertiary {
             font-size: 1.8rem;
@@ -27,6 +28,7 @@
         height: $card-height;
         backface-visibility: hidden;
         transition: all .8s;
+        box-shadow: 0 8px 12px rgba($color-black, .4);
         
         &--front {
             position: absolute;
@@ -44,8 +46,8 @@
             width: 100%;
             background-image: linear-gradient(
                 to right bottom,
-                rgba($color-black, .8),
-                rgba($color-primary, .8)
+                rgba(#44000d, .8),
+                rgba(#9c5518, .8)
             );
             transform: rotateY(180deg);
         }
