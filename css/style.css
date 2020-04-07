@@ -44,7 +44,7 @@ body {
   box-sizing: border-box;
   line-height: 1.7;
   padding: 3rem;
-  color: #777; }
+  color: #333; }
 
 .heading-primary {
   text-transform: uppercase;
@@ -93,7 +93,7 @@ body {
 .btn:link, .btn:visited {
   display: inline-block;
   padding: .9rem 2rem;
-  border-radius: .5rem;
+  border-radius: 3px;
   font-size: 2rem;
   margin: 2.4rem 0;
   transition: all .2s; }
@@ -142,21 +142,50 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.col-1-of-2 {
+  float: left;
+  width: 50%; }
+
 .about {
   padding: 25rem 0;
   background: #f7f7f7;
   margin-top: -25vh; }
+  .about .heading-secondary {
+    margin-bottom: 5rem; }
   .about__content {
-    padding: 6rem 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .about__text-content {
-    word-wrap: break-word; }
-  .about__pictures {
-    flex-basis: 2; }
-
-.box {
-  height: 200px;
-  width: 200px;
-  background: red; }
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .about .album {
+    position: relative; }
+    .about .album__pictures {
+      width: 50%;
+      position: absolute;
+      border-radius: 5px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+      z-index: 10;
+      transition: all .3s; }
+      .about .album__pictures:hover {
+        padding: 2rem;
+        transform: scale(1.04);
+        outline: 0.8rem solid #442727;
+        z-index: 20; }
+      .about .album__pictures:not(:hover) {
+        transform: scale(0.8); }
+    .about .album .p1 {
+      top: 0;
+      left: 10%; }
+    .about .album .p2 {
+      top: 4rem;
+      left: 70%; }
+    .about .album .p3 {
+      top: 10rem;
+      left: 30%; }

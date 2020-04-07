@@ -3,24 +3,53 @@
     background: $color-grey-light;
     margin-top: -25vh;
 
+    .heading-secondary {
+        margin-bottom: 5rem;
+    }
+
     &__content {
-        padding: 6rem 10rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-top: 4rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    &__text-content {
-        word-wrap: break-word;
+    .album {
+        position: relative;
+
+        &__pictures {
+            width: 50%;
+            position: absolute;
+            border-radius: 5px;
+            box-shadow: 0 8px 16px rgba($color-black, .5);
+            z-index: 10;
+            transition: all .3s;
+
+            &:hover {
+                padding: 2rem;
+                transform: scale(1.04);
+                outline: .8rem solid $color-primary;
+                z-index: 20;
+            }
+
+            &:not(:hover){
+                transform: scale(.8);
+            }
+        }
+
+        .p1 {
+            top: 0;
+            left: 10%;
+        }
+
+        .p2 {
+            top: 4rem;
+            left: 70%;
+        }
+
+        .p3 {
+            top: 10rem;
+            left: 30%;
+        }
     }
 
-    &__pictures {
-        flex-basis: 2;
-    }
-}
-
-.box {
-    height: 200px;
-    width: 200px;
-    background: red;
 }
