@@ -150,6 +150,50 @@ body {
     color: transparent;
     -webkit-background-clip: text; }
 
+.card {
+  perspective: 150rem;
+  height: 45rem;
+  position: relative; }
+  .card__detail {
+    position: absolute;
+    font-size: 1.8rem;
+    top: 60%;
+    left: 0; }
+    .card__detail .heading-tertiary {
+      font-size: 1.8rem; }
+  .card__rate {
+    color: #fff;
+    font-size: 4rem;
+    margin-top: 8rem; }
+    .card__rate span {
+      display: block; }
+  .card__side {
+    height: 45rem;
+    backface-visibility: hidden;
+    transition: all .8s; }
+    .card__side--front {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff; }
+    .card__side--back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(68, 39, 39, 0.8));
+      transform: rotateY(180deg); }
+  .card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+
 .header {
   height: 95vh;
   background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(68, 39, 39, 0.8)), url("../img/hero.jpg");
