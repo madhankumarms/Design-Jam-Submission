@@ -3,10 +3,6 @@
     background: $color-grey-light;
     margin-top: -25vh;
 
-    .heading-secondary {
-        margin-bottom: 5rem;
-    }
-
     &__content {
         margin-top: 4rem;
         margin-left: auto;
@@ -53,3 +49,22 @@
     }
 
 }
+
+.features {
+    margin-top: -9rem;
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, .8),
+        rgba($color-primary, .8)
+    ), url('../img/coffee-and-beans.jpg');
+    background-position: top;
+    background-size: cover;
+
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg);
+    }
+}
+

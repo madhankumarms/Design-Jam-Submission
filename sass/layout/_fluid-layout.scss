@@ -15,12 +15,14 @@
 
 .col-1-of-3 {
     float: left;
-    width: 33.3%;
+    width: 30%;
+
+    &:not(:last-child) {
+        margin-right: 5%;
+    }
 }
 
 .col-1-of-4 {
     float: left;
     width: 25%;
 }
-
-
