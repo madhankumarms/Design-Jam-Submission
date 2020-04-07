@@ -1,0 +1,9 @@
+@mixin brown-underline {
+    content: "";
+    margin: 1.5rem auto; 
+    display: block;
+    height: .4rem;
+    max-width: 35%;
+    background-color: $color-primary-light;
+    border-radius: 1rem;
+}

@@ -1,0 +1,26 @@
+.about {
+    padding: 25rem 0;
+    background: $color-grey-light;
+    margin-top: -25vh;
+
+    &__content {
+        padding: 6rem 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text-content {
+        word-wrap: break-word;
+    }
+
+    &__pictures {
+        flex-basis: 2;
+    }
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background: red;
+}
