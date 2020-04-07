@@ -47,6 +47,13 @@ body {
         @include brown-underline;
     }
 
+    &--light {
+        color: $color-white;
+        &::after {
+            @include white-underline;
+        }
+    }
+
 }
 
 .heading-tertiary {

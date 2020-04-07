@@ -8,6 +8,16 @@
     border-radius: 1rem;
 }
 
+@mixin white-underline {
+    content: "";
+    margin: 1.5rem auto; 
+    display: block;
+    height: .4rem;
+    max-width: 35%;
+    background-color: $color-white;
+    border-radius: 1rem;
+}
+
 
 @mixin clearfix {
     content: "";
