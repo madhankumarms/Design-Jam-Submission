@@ -12,9 +12,8 @@
     position: relative;
 
     &__logo-box {
-        position: absolute;
-        top: 3rem;
-        left: 3rem;
+        // top: 3rem;
+        // left: 3rem;
         cursor: pointer;
 
         img {
@@ -30,5 +29,42 @@
         transform: translate(-50%, -50%);
         text-align: center;
     }
+
+    
+    &__notch {
+        // position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 4rem;
+
+
+    #navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        .nav-list {
+            list-style: none;
+            &:not(:last-child) {
+                margin-right: 8rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: $color-white;
+                font-size: 2rem;
+                padding-bottom: 1rem;
+                transition: all .1s;
+
+                &:hover {
+                    border-bottom: .2rem solid $color-white;
+                }
+            }
+        }
+            
+        }
+    }
+
     
 }
