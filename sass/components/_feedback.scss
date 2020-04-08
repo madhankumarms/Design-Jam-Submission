@@ -1,0 +1,55 @@
+.feedback {
+    width: 70%;
+    margin: 2rem auto;
+    background-color: $color-grey-light;
+    padding: 8rem 6rem;
+    font-size: $default-font-size;
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    transform: skewX(12deg);
+    // transition: all .3s;
+
+    & > * {
+        transform: skewX(-12deg);
+    }
+
+    &__author {
+        width: 15rem;
+        height: 15rem;
+        margin-right: 4rem;
+        margin-top: -1.4rem;
+        background-color: orange;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+    }
+
+    &__author img {
+        height: 100%;
+        transform: translateX(-4rem) scale(1.2);
+        backface-visibility: hidden;
+        transition: all .2s;
+    }
+
+    &__author-name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+        text-transform: uppercase;
+        text-align: center;
+        color: $color-white;
+        opacity: 0;
+        backface-visibility: hidden;
+        transition: all .3s;
+    }
+
+    &:hover &__author-name {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__author img {
+        filter: brightness(60%);
+    }
+}
