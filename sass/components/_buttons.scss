@@ -21,6 +21,11 @@
     color: $color-primary;
 }
 
+.btn--brown {
+    color: $color-white;
+    background-color: $color-primary;
+}
+
 .btn-text {
     &:link,
     &:visited {
